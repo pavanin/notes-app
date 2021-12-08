@@ -62,4 +62,4 @@ yargs.command({
         notes.listNotes();
     }
 })
-yargs.argv;
+yargs.parse();

@@ -4,6 +4,7 @@ const fs = require('fs');
 const readNote = (title) => {
     const notes = loadNotes();
     const readNote = notes.find((note) => title === note.title);
+    debugger
     if (readNote) {
         console.log(chalk.green.inverse(readNote.title), readNote.body);
     } else {
